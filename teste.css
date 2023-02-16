@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    min-height: 50px;
+    max-height: 100px;
+    max-width: 100%;
+    background-color: #3867D5;
+}
+
+.header {
+    color: white;
+    min-height: 50px;
+    max-height: 100px;
+    min-width: 68%;
+    margin: auto;
+    max-width: 68%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header nav {
+    min-width: 85px;
+    width: 170px;
+}
+
+.header ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header ul,
+.header nav,
+.header h1 {
+    height: 100%;
+}
+
+.header li {
+    list-style: none;
+}
+
+.conteudo {
+    margin: auto;
+    max-width: 68%;
+    height: 100%;
+}
+
+.sobre-a-loja {
+    margin-top: 20px;
+    max-height: 40%;
+    width: 100%;
+    display: flex;
+}
+
+.sobre-a-loja img {
+    position: relative;
+    max-height: 400px;
+}
+
+.texto {
+    margin-left: 20px;
+    height: 40%;
+    max-width: 100%;
+
+}
+
+.texto h2 {
+    color: #3867D5;
+}
+
+.texto p {
+    margin-top: 5px;
+    border-top: 2px solid #3867D5;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.produtos {
+    margin-top: 20px;
+}
+
+.produtos h2 {
+    width: 100%;
+    color: #3867D5;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #3867D5;
+}
+
+.produto {
+    min-height: 350px;
+    max-width: 23.8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.espaco-produtos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.produto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 310px;
+}
+
+.produto img {
+    max-height: 200px;
+    margin: auto;
+}
+
+.produto-conteudo {
+    width: 100%;
+    min-height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.produto button {
+    background-color: #3867D5;
+    width: 100%;
+    border: 2px solid #3867D5;
+}
+
+@media screen and (max-width: 375px) {
+
+    .header {
+        min-height: 90px;
+        max-width: 68%;
+        margin: auto;
+        color: white;
+        display: block;
+
+    }
+
+    .header h1 {
+        margin: auto;
+        max-width: 200px;
+    }
+
+    .header nav {
+        min-height: 40px;
+        width: 100%;
+    }
+
+    .header ul {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .header li {
+        height: 20px;
+        width: 100%;
+        text-align: center;
+        list-style: none;
+    }
+
+    .conteudo {
+        margin-top: 20px;
+        max-width: 68%;
+        height: 100%;
+        margin: auto;
+        display: grid;
+        overflow: scroll;
+    }
+
+    .sobre-a-loja {
+        max-height: 40%;
+        width: 100%;
+        display: block;
+    }
+
+    .sobre-a-loja img {
+        margin-top: 20px;
+        position: relative;
+        height: 180px;
+    }
+
+    .texto {
+        height: 40%;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .texto p {
+        width: 100%;
+        margin-top: 5px;
+        border-top: 2px solid #3867D5;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .produtos {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .espaco-produtos {
+        display: block;
+    }
+
+    .produto {
+        max-width: none;
+        width: 100%;
+    }
+
+    .produto img {
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 767px) {
+
+    .sobre-a-loja {
+        display: block;
+    }
+
+    .sobre-a-loja img {
+        max-height: 380px;
+    }
+
+    .texto {
+        margin-left: 0;
+    }
+
+    .espaco-produtos {
+        display: grid;
+        grid-template-columns: 250px 1fr;
+        gap: 5px 5px;
+    }
+
+    .produtos {
+        margin-bottom: 20px;
+    }
+
+    .produto {
+        max-width: 250px;
+    }
+
+    .produto-conteudo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .sobre-a-loja {
+        display: block;
+    }
+
+    .texto {
+        margin-left: 0;
+    }
+
+    .sobre-a-loja img {
+        position: relative;
+        max-height: 510px;
+    }
+
+    .produtos {
+        margin-bottom: 20px;
+    }
+
+    .produto img {
+        max-height: 160px;
+    }
+
+}

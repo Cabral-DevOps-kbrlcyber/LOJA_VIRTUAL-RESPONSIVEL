@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Robot, sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    padding: 16px;
+    background-color: rgb(111, 106, 255);
+    color: #fff;
+    align-items: center;
+    }
+
+    header h1 {
+        font-style: italic;
+    }
+
+    li {
+        float: left;
+        list-style: none;
+        padding: 16px;
+    }
+
+    li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .conteudo img {
+        width: 520px;
+        margin-top: 32px;
+        margin-right: 32px
+    }
+
+    .conteudo, .sapatos {
+        display: flex;
+        
+    }
+
+    .conteudo h2 {
+        padding-top: 24px;
+        font-size: 2em;
+        color: rgb(96, 91, 255);
+        font-style: italic;
+        border-bottom: 0.1em solid rgb(96, 91, 255);
+    }
+
+    .conteudo p {
+        padding-top: 48px;
+    }
+
+    .menu {
+        font-size: 24px;
+    }
+
+    .sapatos h2 {
+        padding-top: 24px;
+        font-size: 2em;
+        color: rgb(96, 91, 255);
+        font-style: italic;
+        border-bottom: 0.1em solid rgb(96, 91, 255);
+    }
+
+    .tamanhos {
+        display: flex;
+    }
+
+
+    button {
+        background-color: rgb(81, 75, 252);
+        color: #fff;
+        width: 100%;
+        border: none;
+        cursor: pointer;
+        padding: 6px;
+        margin: 16px 0;
+    }
+
+    .segundo-tamanho {
+        padding: 0;
+        margin: 8px
+    }
+
+.tenis-preto p,
+.segundo-tamanho p {
+    width: 90%;
+}
+
+.segundo-tamanho img {
+    width: 130px;
+    padding: 0;
+    margin-bottom: 24px;
+}
+
+.segundo-tamanho-roxo img {
+    width: 170px;
+    padding: 0;
+    margin: 0;
+}
+
+.segundo-tamanho-roxo button, 
+.segundo-tamanho button{
+    padding: 8px;
+    margin-bottom: 2px;
+}
+
+.segundo-tamanho-roxo p {
+    margin-bottom: 24px;
+    margin: 0;
+}
+
+@media screen and (min-width:641px) and (max-width:1023px) {
+
+    .container-body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+.conteudo {
+    display: block;
+}
+.conteudo img {
+    padding: 32px;
+    margin: 0;
+}
+
+    .sobre-a-loja  {
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    .sobre-a-loja h2 {
+        font-size: 2em;
+        padding-top: 12px;
+    }
+
+    .sobre-a-loja p {
+        font-size: 1em;
+        padding-top: 8px;
+    }
+
+    header {
+    max-width: 100%;
+    display: flex;
+    background-color: rgb(111, 106, 255);
+    color: #fff;
+    justify-content: space-between;
+    
+    } 
+
+    li a{
+        font-size: 0.8em;
+        padding: 5px;
+        
+    }
+
+    li {
+        padding: 0;
+    }
+
+    .tamanhos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    .tamanhos img {
+        padding: 18px;
+        width: 80%;
+    }
+
+    .tamanhos button, 
+    .segundo-tamanho-roxo button {
+        width: 90%;
+    }
+
+    .segundo-tamanho-roxo {
+        padding-top: 0;
+        width: 100%;
+        
+    }
+
+    .calcados h3 {
+        padding-top: 24px;
+    }
+
+    #puma {
+        width: 150px;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .container-body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 0.1fr;
+        grid-gap: 10px;
+    }
+    
+
+    .conteudo {
+        width: 100%;
+        display: block;
+    }
+
+    .conteudo img {
+        width: 80%;
+        margin-left: 24px;
+        
+    }
+    .sapatos h2 {
+        font-size: 1.4em;
+    }
+
+    .conteudo h2 {
+        width: 100%;
+        font-size: 1.5em;
+        padding: 12px;
+        
+    }
+
+    .sobre-a-loja  {
+        width: 100%;
+        padding-left: 8px;
+    }
+
+    .sobre-a-loja h2 {
+        font-size: 1.4rem;
+    }
+    .sobre-a-loja p {
+        font-size: 0.8em;
+        padding: 6px;
+    }
+
+    header {
+    display: flex;
+    color: #fff;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    } 
+
+
+    header h1 {
+        font-size: 1.5em;
+        margin: 12px;
+        padding-left: 24px;
+    }
+
+    li a {
+        
+        font-size: 0.6em; 
+    }
+
+    li {
+        padding: 1px;
+        display: flex;
+    }
+    
+    .tamanhos {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 10px;
+        }
+
+        .segundo-tamanho, 
+        .segundo-tamanho-roxo {
+            padding-top: 16px;
+            margin-top: 16px;
+            font-size: 0.8rem;
+            width: 100%;
+            display: block;
+        }
+
+    .segundo-tamanho img {
+        width: 70%;
+    }
+
+    }
